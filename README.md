@@ -22,7 +22,11 @@ This library is intended *to manage database operations in PHP easily.*
 Firstly, declare ***DatabaseOperation*** class using
 ```$dbop = new DatabaseOperation;```
 
+>***Note:***
+> In this lib, use **\| (pipe)** to join between column names and values. See examples for more detail.
+
+
 | No | Method | Syntax | Description | Example | Remark |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Create |
-| 2 | `select()` | `select($tableName,$names,$values,$target)` | This method select single column and return single string value or return false. | `$dbop->select($users,'username\|email\|password','john\|123@mail4u.com.mm\|22221','id');` |
+| 2 | `select()` | `select($tableName,$names,$values,$target)` | This method select single column and  return single string value or return false. | `$dbop->select($users,'username\|email\|password','john\|123@mail4u.com.mm\|22221','id');` |
