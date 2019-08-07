@@ -33,7 +33,8 @@ Firstly, declare ***DatabaseOperation*** class using
 | 3 | `selectId()` | `selectId($tableName,$columnNames,$values,$count)` | Select id from database and return **id** or **false** | `selectId($users,'username\|email,'john\|123@mail4u.com.mm',2)`
 | 4 | `isDataExist()` | `isDataExist($tableName,$columnNames,$values,$count)` | Check if data exist in the database and return **true** or **false**.
 
-### Goals
+
+### Goals and further improvement
 - [ ] Create
 - [x] Read
 - [ ] Update
