@@ -9,9 +9,9 @@ This library is intended *to manage database operations in PHP easily.*
 
 ## 1. Installation
 ### Local install method
-- Clone this git using ```git clone <url>```
+- Clone this git using ```git clone https://github.com/yhhCh405/php_db_lib.git```
 - Move downloaded ***folder name*** folder to your project's home directory (htdocs/*).
-- At the top of your php file add ```include('path/this.php');```
+- At the top of your php file add ```include('php_db_lib/yhh-dbcrud.php');```
 - Done! Now read usage.
 
 ### Remote install method
