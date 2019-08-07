@@ -34,7 +34,7 @@ Firstly, declare ***DatabaseOperation*** class using
 | 4 | `isDataExist()` | `isDataExist($tableName,$columnNames,$values,$count)` | Check if data exist in the database and return **true** or **false**.
 
 
-### Goals and further improvement
+### Goals
 - [ ] Create
 - [x] Read
 - [ ] Update
