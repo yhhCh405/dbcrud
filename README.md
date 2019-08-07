@@ -12,12 +12,12 @@ This library is intended *to manage database operations in PHP easily.*
 - Clone this git using ```git clone https://github.com/yhhCh405/php_db_lib.git```
 - Move downloaded **php_db_lib** folder to your project's home directory (htdocs/*).
 - At the top of your php file add ```include('php_db_lib/yhh-dbcrud.php');```
-- Open *config.php* and replace the values with your database information and save.
+- Open **config.php** and replace the values with your database information and save.
 - Done! Now read usage.
 
 ### Remote install method
 - At the top of your php file add ```include('https://raw.githubusercontent.com/yhhCh405/php_db_lib/master/yhh-dbcrud.php');```
-- Open *config.php* and replace the values with your database information and save.
+- Open **config.php** and replace the values with your database information and save.
 - Done! Now read usage.
 
 ## 2. Usage
