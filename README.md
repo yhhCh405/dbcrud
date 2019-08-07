@@ -26,7 +26,7 @@ Firstly, declare ***DatabaseOperation*** class using
 > In this lib, use **\| (pipe)** to join between column names and values. See examples for more detail.
 
 
-| No | Method | Syntax | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Example | Remark |
+| No | Method | Syntax | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Example | Remark |
 | --- | --- | --- | --- | --- | --- |
 | 1 | `dbConnect()` | `dbConnect` | This can call when you make changes in config.php. Usually you don't need this to call, since this method already invoked in constructor. | - | |
 | 2 | `select()` | `select($tableName,$names,$values,$target)` | This method select single column and  return single string value or return false. | `$dbop->select($users,'username\|email\|password','john\|123@mail4u.com.mm\|22221','id');` |
