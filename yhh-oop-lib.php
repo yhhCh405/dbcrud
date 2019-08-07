@@ -46,10 +46,10 @@ class stringWatcher{
 }
 
 class DatabaseOperation{
-	public $db_server 	= "127.0.0.1";
-	public $db_username = "root";
-	public $db_password = "";
-	public $db_name 	= "final_project";
+	public $db_server 	= "127.0.0.1";	//change to your database serrver
+	public $db_username     = "root";	//change to your db username
+	public $db_password     = "";		//change to your db password
+	public $db_name 	= "test_db";	//change to your db name
 
 	public function __construct(){
 		$this->dbConnect();
@@ -71,15 +71,7 @@ class DatabaseOperation{
 			return true;
 		}
 	}
-
-	// public function validateData($table,$names,$values,$count){
-	// 	$query = "SELECT * FROM ".$table." WHERE ".$this->stringBuilder($names,$values,$count,'update');
-	// 	$q = mysqli_query($this->dbConnect(),$query);
-	// 	if ($q) {
-	// 		return true;
-	// 	}
-	// }
-
+	
 	public function selectId($table,$names,$values,$count){
 		$query = "SELECT id FROM ".$table." WHERE ".$this->stringBuilder($names,$values,$count,'is-exist');
 		$q = mysqli_query($this->dbConnect(),$query);
