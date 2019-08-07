@@ -1,6 +1,5 @@
 <?php
-include('var.php');
-
+include('config.php');
 
 class stringWatcher{
 	public function formValidate($text,$mode)
@@ -70,14 +69,6 @@ class DatabaseOperation extends globalVariables{
 			return true;
 		}
 	}
-
-	// public function validateData($table,$names,$values,$count){
-	// 	$query = "SELECT * FROM ".$table." WHERE ".$this->stringBuilder($names,$values,$count,'update');
-	// 	$q = mysqli_query($this->dbConnect(),$query);
-	// 	if ($q) {
-	// 		return true;
-	// 	}
-	// }
 
 	public function selectId($table,$names,$values,$count){
 		$query = "SELECT id FROM ".$table." WHERE ".$this->stringBuilder($names,$values,$count,'is-exist');
