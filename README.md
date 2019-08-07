@@ -31,7 +31,7 @@ Firstly, declare ***DatabaseOperation*** class using
 | 1 | `dbConnect()` | `dbConnect()` | This can call when you make changes in config.php. Usually you don't need this to call, since this method already invoked in constructor. | - | |
 | 2 | `select()` | `select($tableName,$columnNames,$values,$count,$target)` | This method select single column and  return **single column value** or **false**. | `$dbop->select($users,'username','john',1,'id');` | `$count` is refer to column counts of current query. Remember to check whether column name counts and value counts are the same.
 | 3 | `selectId()` | `selectId($tableName,$columnNames,$values,$count)` | Select id from database and return **id** or **false** | `selectId($users,'username\|email,'john\|123@mail4u.com.mm',2)`
-| 4 | `isDataExist()` | `isDataExist($tableName,$columnNames,$values,$count)` | Check if data exist in the database and return **true** or **false**. | `idDataExist($users,'username\|userid\|email','mgmg\|207\|mgmg@domain.com',3)` |
+| 4 | `isDataExist()` | `isDataExist($tableName,$columnNames,$values,$count)` | Check if data exist in the database and return **true** or **false**. | `isDataExist($users,'username\|userid\|email','mgmg\|207\|mgmg@domain.com',3)` |
 
 
 ### Goals
