@@ -10,12 +10,12 @@ This library is intended *to manage database operations in PHP easily.*
 ## 1. Installation
 ### Local install method
 - Clone this git using ```git clone https://github.com/yhhCh405/php_db_lib.git```
-- Move downloaded ***folder name*** folder to your project's home directory (htdocs/*).
+- Move downloaded **php_db_lib** folder to your project's home directory (htdocs/*).
 - At the top of your php file add ```include('php_db_lib/yhh-dbcrud.php');```
 - Done! Now read usage.
 
 ### Remote install method
-- At the top of your php file add ```include('url');```
+- At the top of your php file add ```include('https://raw.githubusercontent.com/yhhCh405/php_db_lib/master/yhh-dbcrud.php');```
 - Done! Now read usage.
 
 ## 2. Usage
@@ -26,7 +26,7 @@ Firstly, declare ***DatabaseOperation*** class using
 > In this lib, use **\| (pipe)** to join between column names and values. See examples for more detail.
 
 
-| No | Method | Syntax | Description | Example | Remark |
+| No | Method | Syntax | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Example | Remark |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Create |
+| 1 | `dbConnect()` | `dbConnect` | This can call when you make changes in config.php. Usually you don't need this to call, since this method already invoked in constructor. | - | |
 | 2 | `select()` | `select($tableName,$names,$values,$target)` | This method select single column and  return single string value or return false. | `$dbop->select($users,'username\|email\|password','john\|123@mail4u.com.mm\|22221','id');` |
