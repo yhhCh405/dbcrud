@@ -29,5 +29,14 @@ Firstly, declare ***DatabaseOperation*** class using
 | No | Method | Syntax | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Example | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remark&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --- | --- | --- | --- | --- | --- |
 | 1 | `dbConnect()` | `dbConnect()` | This can call when you make changes in config.php. Usually you don't need this to call, since this method already invoked in constructor. | - | |
-| 2 | `select()` | `select($tableName,$columnNames,$values,$count,$target)` | This method select single column and  return single string value or return false. | `$dbop->select($users,'username\|email\|password','john\|123@mail4u.com.mm\|22221',3,'id');` | `$count` is refer to column counts of current query. Remember to check whether column name counts and value counts are the same.
-| 3 | `selectId()` | `selectId($tableName,$columnNames,$values,$count)` | Select id from database and return id or false | `selectId($users,'username\|email,'john\|123@mail4u.com.mm',2)`
+| 2 | `select()` | `select($tableName,$columnNames,$values,$count,$target)` | This method select single column and  return **single column value** or **false**. | `$dbop->select($users,'username\|email\|password','john\|123@mail4u.com.mm\|22221',3,'id');` | `$count` is refer to column counts of current query. Remember to check whether column name counts and value counts are the same.
+| 3 | `selectId()` | `selectId($tableName,$columnNames,$values,$count)` | Select id from database and return **id** or **false** | `selectId($users,'username\|email,'john\|123@mail4u.com.mm',2)`
+| 4 | `isDataExist()` | `isDataExist($tableName,$columnNames,$values,$count)` | Check if data exist in the database and return **true** or **false**.
+
+### Goals
+[ ] Create
+[x] Read
+[ ] Update
+[ ] Delete
+[x] Insert
+[ ] Alter
